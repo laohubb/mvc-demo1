@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.app1{
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}
+.app2{
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}
+
+.app3{
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}
+
+.app4{
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}
+.app1 button{
+    width: 20px;
+}
+ul li{
+    list-style: none;
+}
+.selected{
+ background-color: pink;
+}
+.active{
+    display: block;
+}
+.app2 .tab ul{
+    display: flex;
+
+}
+.app2 .tab li{
+
+    display: block;
+    width: 50%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.app2 .content{
+    width: 100%;
+    border: 1px solid black;
+    height: 200px;
+}
+.app2 .content li {
+    display: none;
+}
+.app2 .content li.active {
+    display: block;
+}
+
+
+
+.app3 .square {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+
+
+.app3 .square.active{
+    transform: translateX(15vh);
+}
+.app4 .circle{
+    border: 1px solid black;
+    width: 20vh;
+    height: 20vh;
+    margin-top: 10vh;
+    margin-left: 20vh;
+    border-radius: 50%;
+}
+@keyframes colorsChange {
+    0%{
+        background: blue;
+    }
+    100%{
+        background-color: indianred;
+    }
+
+}
+.app4 .active{
+    animation: 1s infinite alternate colorsChange;
+}

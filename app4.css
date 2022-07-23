@@ -1,0 +1,20 @@
+.app4 .circle{
+    border: 1px solid black;
+    width: 20vh;
+    height: 20vh;
+    margin-top: 10vh;
+    margin-left: 20vh;
+    border-radius: 50%;
+}
+@keyframes colorsChange {
+    0%{
+        background: blue;
+    }
+    100%{
+        background-color: indianred;
+    }
+
+}
+.app4 .active{
+    animation: 1s infinite alternate colorsChange;
+}

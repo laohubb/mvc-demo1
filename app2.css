@@ -1,0 +1,35 @@
+ul li{
+    list-style: none;
+}
+.selected{
+ background-color: pink;
+}
+.active{
+    display: block;
+}
+.app2 .tab ul{
+    display: flex;
+
+}
+.app2 .tab li{
+
+    display: block;
+    width: 50%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.app2 .content{
+    width: 100%;
+    border: 1px solid black;
+    height: 200px;
+}
+.app2 .content li {
+    display: none;
+}
+.app2 .content li.active {
+    display: block;
+}
+
+
+
